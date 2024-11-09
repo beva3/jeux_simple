@@ -1,3 +1,5 @@
 from game import Game
 
-g = Game(2,5,10)
+g = Game(2,30,10)
+g.result()
+g.play()

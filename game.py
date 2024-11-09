@@ -13,4 +13,10 @@ class Game:
     def msg(self, msg):
         print('==',msg,"==")
 
-    # def guess(self, player_guess):
+    def guess(self, player_guess):
+        if player_guess < self.secret_number:
+            return "Too low"
+        elif player_guess > self.secret_number:
+            return "Too high"
+        else:
+            return "Congratulations! You guessed the number."
